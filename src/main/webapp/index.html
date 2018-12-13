@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Java Webapp</title>
+
+    <style type="text/css">
+        h1 {
+            color: red
+        }
+    </style>
+</head>
+<body>
+
+<h1>Test Java Webapp</h1>
+
+<form action="rest/contact/add" method="post">
+    <fieldset>
+        <div>
+            <label for="lastName">lastName</label>
+            <input type="text" id="lastName" name="lastName"/>
+        </div>
+
+        <div>
+            <label for="firstName">firstName</label>
+            <input type="text" id="firstName" name="firstName"/>
+        </div>
+
+        <div>
+            <input type="submit"/>
+        </div>
+    </fieldset>
+</form>
+
+<form action="rest/contact/search" method="get">
+    <fieldset>
+        <div>
+            <label for="search">search</label>
+            <input type="text" id="search" name="search"/>
+        </div>
+
+        <div>
+            <input type="submit"/>
+        </div>
+    </fieldset>
+</form>
+
+</body>
+
+</html>
